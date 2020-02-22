@@ -5,6 +5,7 @@
         PMB - UTM
       </a>
       <a href="#" class="item">Beranda</a>
+      <a href="form_pendaftaran.php" class="item">Pendaftaran Mahasiswa </a>
       <div class="ui simple dropdown item">
         Dropdown <i class="dropdown icon"></i>
         <div class="menu">

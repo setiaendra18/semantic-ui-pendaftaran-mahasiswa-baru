@@ -11,19 +11,20 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/components/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/site.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/css/components/form.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/container.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/grid.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/header.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/image.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/menu.css">
-
   <link rel="stylesheet" type="text/css" href="assets/css/components/divider.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/list.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/segment.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="assets/css/components/icon.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/css/components/button.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/components/checkbox.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/components/dropdown.css">
 
   <link rel="stylesheet" type="text/css" href="css">
 
