@@ -30,12 +30,12 @@ if (mysqli_num_rows($result) > 0) {
          ?>
 
 
-           
+
             <tr>
                 <td><?= $row['id_pendaftar']?></td>
                 <td><?= $row['nama']?></td>
                 <td>
-                <?php
+                    <?php
                 
                 if($row['jenis_kelamin']==0)
                 {
@@ -48,12 +48,12 @@ if (mysqli_num_rows($result) > 0) {
                 
                 
                 ?>
-                
+
                 </td>
                 <td><?= $row['kota']?></td>
                 <td><?= $row['provinsi']?></td>
                 <td>
-                <?php
+                    <?php
                 
                 if($row['status_pendaftaran']==1)
                 {
@@ -66,8 +66,8 @@ if (mysqli_num_rows($result) > 0) {
                 
                 
                 ?>
-                
-                
+
+
                 </td>
             </tr>
 
