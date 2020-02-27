@@ -1,7 +1,5 @@
 <?php
 include '../config/database.php';
- 
-// mengaktifkan session
 session_start();
  
 echo "Hai, selamat datang ". $_SESSION['nama'];

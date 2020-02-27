@@ -1,10 +1,6 @@
 <?php
-
 include "../config/database.php";
 ?>
-
-
-
 <div class="ui main  text container">
     <table class="ui striped celled table">
         <thead>
@@ -27,9 +23,6 @@ if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while ($row = mysqli_fetch_assoc($result)) {
         ?>
-
-
-
             <tr>
                 <td><?=$row['id_jurusan']?></td>
                 <td><?=$row['nama_jurusan']?></td>
@@ -50,11 +43,3 @@ mysqli_close($conn);
     </table>
 
 </div>
-
-
-
-
-
-
-
-

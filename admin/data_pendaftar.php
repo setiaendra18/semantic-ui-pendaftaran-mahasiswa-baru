@@ -54,15 +54,19 @@ if (mysqli_num_rows($result) > 0) {
                 <td><?= $row['kota']?></td>
                 <td><?= $row['provinsi']?></td>
                 <td>
-                    <?php
+                <?php
                 
                 if($row['status_pendaftaran']==1)
                 {
-                    echo "<a class='ui red label'>PENDAFTAR BARU</a>";
+                    echo "<a class='ui orange label'>DALAM REVIEW</a>";
                 }
-                else 
+                elseif($row['status_pendaftaran']==2)
                 {
-                    echo "<a class='ui green label'>DI SETUJUI</a>";
+                    echo "<a class='ui green label'>DI TERIMA</a>";
+                }
+                else
+                {
+                    echo "<a class='ui red label'>DI TOLAK</a>";
                 }
                 
                 

@@ -8,5 +8,9 @@ echo $status_pendaftaran=$_GET['status_pendaftaran'];
     {
         exit(mysqli_error($conn));
     }
+    else
+    {
+        header("location:data_pendaftar.php");
+    }
 
 ?>
