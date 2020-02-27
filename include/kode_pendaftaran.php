@@ -1,5 +1,5 @@
 <?php
-include "../config/database.php";
+
 
 function kode_pendaftaran($conn)
 {

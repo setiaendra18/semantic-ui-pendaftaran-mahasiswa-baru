@@ -1,6 +1,6 @@
 <?php 
-require "include/header.php";
-include "config/database.php";
+
+include "../config/database.php";
 ?>
 
 
@@ -15,6 +15,7 @@ include "config/database.php";
                 <th>KOTA</th>
                 <th>PROVINSI</th>
                 <th>STATUS PENDAFTARAN</th>
+                <th>AKSI</th>
             </tr>
         </thead>
         <tbody>
@@ -57,21 +58,19 @@ if (mysqli_num_rows($result) > 0) {
                 
                 if($row['status_pendaftaran']==1)
                 {
-                    echo "<a class='ui orange label'>DALAM REVIEW</a>";
+                    echo "<a class='ui red label'>PENDAFTAR BARU</a>";
                 }
-                elseif($row['status_pendaftaran']==2)
+                else 
                 {
-                    echo "<a class='ui green label'>DI TERIMA</a>";
-                }
-                else
-                {
-                    echo "<a class='ui red label'>DI TOLAK</a>";
+                    echo "<a class='ui green label'>DI SETUJUI</a>";
                 }
                 
                 
                 ?>
-
-
+                </td>
+                <td>
+                <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>">VIEW</a><br>
+                <a href="data_pendaftar_delete.php?id_pendaftar=<?= $row['id_pendaftar'];?>">HAPUS</a><br>
                 </td>
             </tr>
 
@@ -97,4 +96,3 @@ mysqli_close($conn);
 
 
 
-<?php require "include/footer.php"?>
