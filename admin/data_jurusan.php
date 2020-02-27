@@ -1,5 +1,6 @@
 <?php
-include "../config/database.php";
+include 'include/header.php';
+include '../config/database.php';
 ?>
 <div class="ui main  text container">
     <table class="ui striped celled table">
