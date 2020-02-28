@@ -74,8 +74,11 @@ if (mysqli_num_rows($result) > 0) {
                 ?>
                 </td>
                 <td>
-                <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="ui green primary button">VIEW</a>
-                <a href="data_pendaftar_delete.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="ui black button">HAPUS</a><br>
+                <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui green primary button">
+                <i class="eye icon"></i>
+                </a>
+                <a href="data_pendaftar_delete.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui black button">
+                <i class="trash icon"></i></a>
                 </td>
             </tr>
 

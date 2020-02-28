@@ -72,11 +72,12 @@ $data = mysqli_fetch_array($query);
         </div>
         <div class="two fields">
             <div class="field">
+            <div class="ui buttons">
             <a href="data_pendaftar_update.php?id_pendaftar=<?= $data['id_pendaftar'];?>&status_pendaftaran=2" class="ui green primary button">TERIMA</a>
-        
+            <div class="or"></div>
             <a href="data_pendaftar_update.php?id_pendaftar=<?= $data['id_pendaftar'];?>&status_pendaftaran=3" class="ui red button">TOLAK</a>
             </div>
-           
+            </div>
     </form>
 </div>
 
