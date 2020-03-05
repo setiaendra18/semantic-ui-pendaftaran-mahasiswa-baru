@@ -61,4 +61,8 @@
 </head>
 
 <body>
-    <?php require "menu-navigasi.php" ?>
+    <?php 
+    include "config/database.php";
+    require "menu-navigasi.php" 
+    ?>
+    
