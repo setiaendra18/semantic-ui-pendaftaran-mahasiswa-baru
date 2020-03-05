@@ -1,13 +1,6 @@
 <?php require "include/header.php"?>
 
-<div class="ui segments">
-    <div class="ui segment">
 
-
-       SLIDER/GAMBAR
-
-    </div>
-</div>
 
 <div class="ui two column stackable grid">
   <div class="column">

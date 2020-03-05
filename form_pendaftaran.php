@@ -1,6 +1,7 @@
 <?php require "include/header.php"?>
 
-<div class="ui main  text container">
+<div class="ui segments">
+    <div class="ui segment">
     <h3>FORMULIR PENDAFTARAN MAHASISWA BARU</h3>
     <form class="ui form" method="POST" action="form_pendaftaran_simpan.php">
         <div class="two fields">
@@ -69,5 +70,12 @@
 </div>
 
 </div>
+
+
+</div>
+</div>
+
+
+
 
 <?php require "include/footer.php"?>
