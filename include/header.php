@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/components/dropdown.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/table.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/label.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/components/sidebar.css">
     <link rel="stylesheet" type="text/css" href="css">
 
 
@@ -54,7 +54,6 @@
         padding: 5em 0em;
     }
     </style>
-
 </head>
 
 <body>
