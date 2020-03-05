@@ -32,26 +32,26 @@
                 </div>
                 <div class="field">
                     <label>E-mail</label>
-                    <input type="email" name="email" placeholder="Masukan E-Mail anda yang aktif">
+                    <input type="email" name="email" placeholder="Masukan E-Mail anda yang aktif" required>
                 </div>
             </div>
 
             <div class="field">
                 <div class="field">
                     <label>Nomor telephone/Handphone</label>
-                    <input type="text" name="no_tlpn" placeholder="Masukan Nomor telephone" max=12>
+                    <input type="text" name="no_tlpn" placeholder="Masukan Nomor telephone" maxLength="12" required>
                 </div>
                 <div class="field">
                     <label>Provinsi</label>
-                    <input type="text" name="provinsi" placeholder="Masukan Provinsi">
+                    <input type="text" name="provinsi" placeholder="Masukan Provinsi" required>
                 </div>
                 <div class="field">
                     <label>Kota</label>
-                    <input type="text" name="kota_asal" placeholder="Masukan Kota Asal">
+                    <input type="text" name="kota_asal" placeholder="Masukan Kota Asal" required>
                 </div>
                 <div class="field">
                     <label>Sekolah Asal</label>
-                    <input type="text" name="sekolah_asal" placeholder="Masukan Sekolah Asal">
+                    <input type="text" name="sekolah_asal" placeholder="Masukan Sekolah Asal" required>
                 </div>
                 <div class="field">
                     <label>Jurusan Pilihan</label>
@@ -61,7 +61,6 @@
                         <option value="1">Sistem Informasi</option>
                     </select>
                 </div>
-
             </div>
         </div>
         <div class="field">
