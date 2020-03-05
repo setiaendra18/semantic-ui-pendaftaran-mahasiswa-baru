@@ -2,8 +2,13 @@
 
 <div class="ui segments">
     <div class="ui segment">
-        <h3>FORMULIR PENDAFTARAN MAHASISWA BARU</h3>
-        <form class="ui form" method="POST" action="form_pendaftaran_simpan.php">
+    <div class="ui attached message">
+  <div class="header">
+    Welcome to our site!
+  </div>
+  <p>Fill out the form below to sign-up for a new account</p>
+</div>
+        <form class="ui form attached fluid segment" method="POST" action="form_pendaftaran_simpan.php">
             <div class="two fields">
                 <div class="field">
                     <div class="field">
@@ -65,9 +70,9 @@
                                     while($row = mysqli_fetch_assoc($result))
                                     {
                             ?>
-                              
-                                 <option value="<?= $row['id_jurusan']; ?>">  <?= $row['nama_jurusan']; ?></option>    
-                             <?php 
+
+                            <option value="<?= $row['id_jurusan']; ?>"> <?= $row['nama_jurusan']; ?></option>
+                            <?php 
                                     } 
                                     
                                 }else 

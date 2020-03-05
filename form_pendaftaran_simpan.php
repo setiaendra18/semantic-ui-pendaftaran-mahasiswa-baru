@@ -23,7 +23,7 @@ $sql="INSERT INTO pendaftar (id_pendaftar,nama, jenis_kelamin, agama,email,no_tl
  
 if ($conn->query($sql) === TRUE)
 {
-    echo "New record created successfully";
+    header("location:data_pendaftar.php");
     
 } 
 else

@@ -29,8 +29,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/components/table.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/label.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/components/message.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/components/card.css">
+    
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/css/components/transition.js"></script>
 
     <style type="text/css">
     body {
@@ -58,6 +62,19 @@
         padding: 5em 0em;
     }
     </style>
+
+<script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.container')
+  .transition('fade up')
+;
+
+    })
+  ;
+  </script>
 </head>
 
 <body>
