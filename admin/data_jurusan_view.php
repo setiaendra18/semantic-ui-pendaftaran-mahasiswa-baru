@@ -11,7 +11,9 @@ $query = mysqli_query($conn, "SELECT * FROM jurusan WHERE id_jurusan='$id_jurusa
 $data = mysqli_fetch_array($query);
 
 ?>
-<div class="ui main  text container">
+
+<div class="ui segments">
+    <div class="ui segment">
     <h3>FORMULIR PENAMBAHAN JURUSAN</h3>
     <form class="ui form" method="GET" action="data_jurusan_update.php">
     <input type=hidden name="id_jurusan" value="<?= $data['id_jurusan'];?>">
@@ -26,4 +28,6 @@ $data = mysqli_fetch_array($query);
     </form>
 </div>
 
+</div>
+</div>
 </div>

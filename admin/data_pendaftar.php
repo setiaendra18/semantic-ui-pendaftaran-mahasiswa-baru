@@ -4,8 +4,9 @@ include '../config/database.php';
 ?>
 
 
+<div class="ui segments">
+    <div class="ui segment">
 
-<div class="ui main  text container">
     <table class="ui striped celled table">
     <h3>DATA PENDAFTAR UTM (UNIVERSITAS TEKNOLOGI MATARAM)</h3>
         <thead>
@@ -95,10 +96,9 @@ mysqli_close($conn);
         </tbody>
     </table>
 
+    </div>
 </div>
-
-
-
+</div>
 
 
 

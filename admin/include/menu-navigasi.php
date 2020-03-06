@@ -1,5 +1,5 @@
-<div class="ui blue fixed inverted vertical menu">
-    <div class="ui container">
+<div class="ui blue fixed inverted  menu">
+    <div class="ui main  container">
         <a href="#" class="header item">
           ADMIN
         </a>
@@ -9,3 +9,6 @@
         <a href="logout.php" class="item">[Keluar Sistem]</a>
     </div>
 </div>
+ 
+
+<div class="ui container">

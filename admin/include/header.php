@@ -43,7 +43,11 @@
     }
 
     .main.container {
-        margin-top: 7em;
+        margin-top: 0em;
+    }
+
+    .container {
+        margin-top: 5em;
     }
 
     .wireframe {

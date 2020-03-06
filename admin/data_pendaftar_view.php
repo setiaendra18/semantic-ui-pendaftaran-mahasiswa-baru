@@ -13,8 +13,9 @@ $data = mysqli_fetch_array($query);
 ?>
 
 
-<div class="ui main  text container">
-    <div class="ui fluid card ">
+<div class="ui segments">
+    <div class="ui segment">
+    <div class="ui cards">
         <div class="card ">
             <div class="content">
                 <div class="header">
@@ -102,10 +103,10 @@ $data = mysqli_fetch_array($query);
                     </table>
                 </div>
             </div>
-            <div class="extra content">
-                <div class="ui two buttons">
-                    <div class="ui basic green button">Approve</div>
-                    <div class="ui basic red button">Decline</div>
+            <a class="extra content">
+                <a class="ui two buttons">
+                    <a href="data_pendaftar_update.php?id_pendaftar=<?= $id_pendaftar ?>&status_pendaftaran=2" class="ui  green button">TERIMA</a>
+                    <a href= "data_pendaftar_update.php?id_pendaftar=<?= $id_pendaftar ?>&status_pendaftaran=3"" class="ui  red button">TOLAK</a>
                 </div>
             </div>
         </div>
@@ -113,7 +114,14 @@ $data = mysqli_fetch_array($query);
 
     </div>
 
+    </div>
+
+    
 </div>
+</div>
+
+
+
 
 
 
