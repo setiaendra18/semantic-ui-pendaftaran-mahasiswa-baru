@@ -18,8 +18,26 @@ $jurusan_pilih=$_POST['jurusan_pilih'];
 $status_pendaftaran=1;
 $id_pendaftar=kode_pendaftaran($conn);
 
-$sql="INSERT INTO pendaftar (id_pendaftar,nama, jenis_kelamin, agama,email,no_tlpn,provinsi,kota,sekolah_asal,jurusan_pilihan,status_pendaftaran)
- values ('$id_pendaftar','$nama',$jenis_kelamin,$agama,'$email','$no_tlpn','$provinsi','$kota_asal','$sekolah_asal',$jurusan_pilih,$status_pendaftaran)";
+// end membuat koneksi
+$temp1 = $_FILES['foto_skhun']['tmp_name'];
+$name1 = $_FILES['foto_skhun']['name'];
+$size1 = $_FILES['foto_skhun']['size'];
+$type1 = $_FILES['foto_skhun']['type'];
+
+$temp2 = $_FILES['foto_ijazah']['tmp_name'];
+$name2 = $_FILES['foto_ijazah']['name'];
+$size2 = $_FILES['foto_ijazah']['size'];
+$type2 = $_FILES['foto_ijazah']['type'];
+
+$folder = "assets/images/gambar_pendaftar/$id_pendaftar-";
+
+move_uploaded_file($temp1, $folder . $name1);
+move_uploaded_file($temp2, $folder . $name2);
+
+
+
+$sql="INSERT INTO pendaftar (id_pendaftar,nama, jenis_kelamin, agama,email,no_tlpn,provinsi,kota,sekolah_asal,jurusan_pilihan,status_pendaftaran,foto_skhun,foto_ijazah)
+ values ('$id_pendaftar','$nama',$jenis_kelamin,$agama,'$email','$no_tlpn','$provinsi','$kota_asal','$sekolah_asal',$jurusan_pilih,$status_pendaftaran,'$name1','$name2')";
  
 if ($conn->query($sql) === TRUE)
 {

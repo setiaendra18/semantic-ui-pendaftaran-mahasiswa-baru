@@ -2,14 +2,14 @@
 
 <div class="ui segments">
     <div class="ui segment">
-    <div class="ui attached message">
-  <div class="header">
-    Welcome to our site!
-  </div>
-  <p>Fill out the form below to sign-up for a new account</p>
-</div>
-        <form class="ui form attached fluid segment" method="POST" action="form_pendaftaran_simpan.php">
-            <div class="two fields">
+        <div class="ui blue attached message">
+            <div class="header">
+               <p>Formulir Pendaftaran Mahasiswa Baru UTM (Universitas Teknologi Mataram)</p>
+            </div>
+            <p>silahkah isi data dengan benar pada form dibawah ini</p>
+        </div>
+        <form class="ui form attached fluid segment" method="POST" action="form_pendaftaran_simpan.php" enctype="multipart/form-data">
+            <div class="three fields">
                 <div class="field">
                     <div class="field">
                         <label>Nama Lengkap</label>
@@ -85,6 +85,17 @@
 
 
                         </select>
+
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="field">
+                        <label>SKHUN</label>
+                        <input type="file" name="foto_skhun" placeholder="Masukan Sekolah Asal" required>
+                    </div>
+                    <div class="field">
+                        <label>IJAZAH</label>
+                        <input type="file" name="foto_ijazah" placeholder="Masukan Sekolah Asal" required>
                     </div>
                 </div>
             </div>

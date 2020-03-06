@@ -11,75 +11,107 @@ $query = mysqli_query($conn, "SELECT * FROM pendaftar WHERE id_pendaftar='$id_pe
 $data = mysqli_fetch_array($query);
 
 ?>
+
+
 <div class="ui main  text container">
-   <h3>DATA PENDAFTAR</h3> KODE PENDAFTARAN <?= $id_pendaftar; ?>
-    <form class="ui form" method="POST" action="data_pendaftaran_simpan.php">
-        <div class="two fields">
-            <div class="field">
-                <div class="field">
-                    <label>Nama Lengkap</label>
-                    <input type="text" name="nama" placeholder="Masukan Nama Lengkap" value=<?= $data['nama']; ?>
-                        disabled>
+    <div class="ui fluid card ">
+        <div class="card ">
+            <div class="content">
+                <div class="header">
+                    <?= $data['nama']; ?>
                 </div>
-                <div class="field">
-                    <label>Jenis Kelamin</label>
-                    <input type="text" name="nama" placeholder="Jenis Kelamin" value=<?= $data['jenis_kelamin']; ?>
-                        disabled>
+                <div class="meta">
+                    <?php
+
+                     if($data['jenis_kelamin']==0)
+                     {
+                         echo "laki-laki";
+                     }
+                     else
+                     {
+                         echo "Perempuan";
+                     }
+                     ?>
+
                 </div>
-                <div class="field">
-                    <label>Agama</label>
-                    <input type="text" name="nama" placeholder="Jenis Kelamin" value=<?= $data['agama']; ?> disabled>
-                </div>
-                <div class="field">
-                    <label>E-mail</label>
-                    <input type="email" name="email" placeholder="Masukan E-Mail anda yang aktif"
-                        value=<?= $data['email'];?> disabled>
+                <div class="description">
+                    <table class="ui single line table fluid">
+                        <tbody>
+                            <tr>
+                                <td>KOTA ASAL</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>PROVINSI</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>JURUSAN</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>AGAMA</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>E-MAIL</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>SEKOLAH ASAL</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>NO TLPN</td>
+                                <td>John Lilki</td>
+                            </tr>
+                            <tr>
+                                <td>SKHUN</td>
+                                <td class="center aligned">
+                                    <?php
+                                        if($data['foto_skhun']!=null)
+                                        {
+                                            echo '<i class="large green checkmark icon"></i>';
+                                        }
+                                        else
+                                        {
+                                            echo '<i class="large red crossmark icon"></i>';
+                                        }
+                                    ?>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IJAZAH</td>
+                                <td class="center aligned">
+                                    <?php
+                                        if($data['foto_ijazah']!=null)
+                                        {
+                                            echo '<i class="large green checkmark icon"></i>';
+                                        }
+                                        else
+                                        {
+                                            echo '<i class="large red close icon"></i>';
+                                        }
+                                    ?>
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-            <div class="field">
-                <div class="field">
-                    <label>Nomor telephone/Handphone</label>
-                    <input type="text" name="no_tlpn" placeholder="Masukan Nomor telephone"
-                        value=<?= $data['no_tlpn'];?> disabled>
+            <div class="extra content">
+                <div class="ui two buttons">
+                    <div class="ui basic green button">Approve</div>
+                    <div class="ui basic red button">Decline</div>
                 </div>
-                <div class="field">
-                    <label>Provinsi</label>
-                    <input type="text" name="provinsi" placeholder="Masukan Provinsi" value=<?= $data['provinsi'];?>
-                        disabled>
-                </div>
-                <div class="field">
-                    <label>Kota</label>
-                    <input type="text" name="kota_asal" placeholder="Masukan Kota Asal" value=<?= $data['kota'];?>
-                        disabled>
-                </div>
-                <div class="field">
-                    <label>Sekolah Asal</label>
-                    <input type="text" name="sekolah_asal" placeholder="Masukan Sekolah Asal"
-                        value=<?= $data['sekolah_asal'];?> disabled>
-                </div>
-                <div class="field">
-                    <label>Jurusan Pilihan</label>
-                    <input type="text" name="jurusan_pilih" placeholder="Jenis Kelamin"
-                        value=<?= $data['jurusan_pilihan']; ?> disabled>
-                </div>
-                <div class="field">
-                    <label>STATUS PENDAFTARAN</label>
-
-                </div>
-
             </div>
         </div>
-        <div class="two fields">
-            <div class="field">
-            <div class="ui buttons">
-            <a href="data_pendaftar_update.php?id_pendaftar=<?= $data['id_pendaftar'];?>&status_pendaftaran=2" class="ui green primary button">TERIMA</a>
-            <div class="or"></div>
-            <a href="data_pendaftar_update.php?id_pendaftar=<?= $data['id_pendaftar'];?>&status_pendaftaran=3" class="ui red button">TOLAK</a>
-            </div>
-            </div>
-    </form>
-</div>
+
+
+    </div>
 
 </div>
 

@@ -1,4 +1,4 @@
-<div class="ui blue fixed inverted menu">
+<div class="ui blue fixed inverted menu fluid">
     <div class="ui main container">
       <a href="#" class="header item">
         <img class="logo" src="assets/images/logo.png">
