@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-02-27 20:23:36
+Date: 2020-03-09 11:59:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -42,12 +42,12 @@ CREATE TABLE `jurusan` (
   `id_jurusan` int(2) NOT NULL AUTO_INCREMENT,
   `nama_jurusan` varchar(50) NOT NULL,
   PRIMARY KEY (`id_jurusan`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of jurusan
 -- ----------------------------
-INSERT INTO `jurusan` VALUES ('1', 'Tenik Informatika');
+INSERT INTO `jurusan` VALUES ('1', 'Teknik Informatika');
 INSERT INTO `jurusan` VALUES ('2', 'Sistem Informasi');
 INSERT INTO `jurusan` VALUES ('3', 'Manajemen Informasi');
 
@@ -67,17 +67,12 @@ CREATE TABLE `pendaftar` (
   `sekolah_asal` varchar(125) NOT NULL,
   `jurusan_pilihan` int(2) NOT NULL,
   `status_pendaftaran` int(2) DEFAULT NULL,
+  `foto_skhun` varchar(255) NOT NULL,
+  `foto_ijazah` varchar(255) NOT NULL,
   PRIMARY KEY (`id_pendaftar`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of pendaftar
 -- ----------------------------
-INSERT INTO `pendaftar` VALUES ('UTM00001', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '2');
-INSERT INTO `pendaftar` VALUES ('UTM00002', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '3');
-INSERT INTO `pendaftar` VALUES ('UTM00003', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '1');
-INSERT INTO `pendaftar` VALUES ('UTM00004', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '2');
-INSERT INTO `pendaftar` VALUES ('UTM00005', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '1');
-INSERT INTO `pendaftar` VALUES ('UTM00006', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '3');
-INSERT INTO `pendaftar` VALUES ('UTM00007', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '1');
-INSERT INTO `pendaftar` VALUES ('UTM00008', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '081343316931', 'Yogyakarta', 'Sleman', 'SMK YAPPI WONOSARI', '0', '1');
+INSERT INTO `pendaftar` VALUES ('UTM00001', 'Endra Setiawan', '0', '0', 'setiaendra18@gmail.com', '281343316931', 'd', 'Sleman', '1', '2', '3', 'Screenshot_5.png', '');
