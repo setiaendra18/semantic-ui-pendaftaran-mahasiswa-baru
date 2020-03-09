@@ -7,8 +7,11 @@ include '../config/database.php';
     <div class="ui segment">
 
 
-        <h3>DATA JURUSAN UTM (UNIVERSITAS TEKNOLOGI MATARAM)</h3>
-        <a href="data_jurusan_tambah.php" class="ui green primary button">TAMBAH</a>
+        <h3 class="ui blue block header">DATA JURUSAN UTM (UNIVERSITAS TEKNOLOGI MATARAM)
+        
+        </h3>
+        
+        <a href="data_jurusan_tambah.php" class="mini ui green  button">TAMBAH</a>
         <table class="ui striped celled table">
             <thead>
                 <tr>
@@ -30,7 +33,7 @@ if (mysqli_num_rows($result) > 0) {
                 <tr>
                     <td><?=$row['id_jurusan']?></td>
                     <td><?=$row['nama_jurusan']?></td>
-                    <td>
+                    <td class="center aligned">
                         <a href="data_jurusan_view.php?id_jurusan=<?= $row['id_jurusan'];?>"
                             class="ui green primary button">VIEW</a>
                         <a href="data_jurusan_delete.php?id_jurusan=<?= $row['id_jurusan'];?>"

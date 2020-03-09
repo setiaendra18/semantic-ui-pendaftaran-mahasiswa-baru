@@ -2,8 +2,16 @@
 include 'include/header.php';
 
  ?>
- <div class="ui main  text container">
-<h3>Hai, selamat datang "<?= $_SESSION['nama']; ?></h3>
- </div>
 
- 
+<div class="ui segments">
+    <div class="column">
+        <div class="ui segment">
+        <h2 class="ui center aligned header">
+               SELAMAT DATANG ( <?=  $_SESSION['nama']; ?> ) DI SISTEM ADMINISTRATOR
+            </h2>
+        <img class="ui centered medium image" src="../assets/images/Delivery.png">
+          
+        </div>
+    </div>
+
+</div>

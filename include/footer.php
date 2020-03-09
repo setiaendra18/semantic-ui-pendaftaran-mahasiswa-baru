@@ -1,7 +1,7 @@
 </div>
 
 
-<div class="ui inverted vertical footer segment">
+<div class="ui stackable inverted vertical footer segment">
     <div class="ui center aligned container">
         <div class="ui stackable inverted divided grid">
             <div class="three wide column">
@@ -33,7 +33,11 @@
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header">Footer Header</h4>
-                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                <p>UNIVERSITAS TEKNOLOGI MATARAM
+                    Jalan Kampus Universitas Teknologi Mataram,
+                    Kekalik Jaya Kota Mataram - NTB 83115
+                    Telp : +62-0370-628418, Fax : +62-0370635007
+                    email : akademik@utmmataram.ac.id</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>

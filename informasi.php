@@ -2,13 +2,13 @@
 
 
 
-<div class="ui two column stackable grid">
+<div class="ui one column stackable grid">
   <div class="column">
-    <div class="ui segment">Content</div>
+    <div class="ui segment">
+    
+    </div>
   </div>
-  <div class="column">
-    <div class="ui segment">Content</div>
-  </div>
+  
 </div>
 
 

@@ -42,14 +42,8 @@
         margin-right: 1.5em;
     }
 
-    .main.container {
-        margin-top: 0em;
-    }
-
-    .container {
-        margin-top: 5em;
-    }
-
+ 
+  
     .wireframe {
         margin-top: 2em;
     }

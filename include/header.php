@@ -31,10 +31,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/components/sidebar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/message.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/card.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/components/tab.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/css/components/transition.js"></script>
+    <script src="assets/css/components/tab.js"></script>
 
     <style type="text/css">
     body {
@@ -56,7 +57,9 @@
         padding: 5em 0em;
     }
     </style>
-
+    <script>
+    
+    </script>
 
 </head>
 

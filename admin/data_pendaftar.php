@@ -8,9 +8,10 @@ include '../config/database.php';
     <div class="ui segment">
 
     <table class="ui striped celled table">
-    <h3>DATA PENDAFTAR UTM (UNIVERSITAS TEKNOLOGI MATARAM)</h3>
+    <h3 class="ui blue block header">DATA PENDAFTAR UTM (UNIVERSITAS TEKNOLOGI MATARAM)</h3>
         <thead>
             <tr>
+                
                 <th>NO PENDAFTARAN</th>
                 <th>NAMA</th>
                 <th>JENIS KELAMIN</th>
@@ -55,7 +56,7 @@ if (mysqli_num_rows($result) > 0) {
                 </td>
                 <td><?= $row['kota']?></td>
                 <td><?= $row['provinsi']?></td>
-                <td>
+                <td class="center aligned">
                 <?php
                 
                 if($row['status_pendaftaran']==1)
@@ -74,7 +75,7 @@ if (mysqli_num_rows($result) > 0) {
                 
                 ?>
                 </td>
-                <td>
+                <td class="center aligned">
                 <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui green primary button">
                 <i class="eye icon"></i>
                 </a>

@@ -4,7 +4,7 @@
     <div class="ui segment">
 
 
-        SLIDER/GAMBAR
+    <img class="ui fluid image" src="assets/images/diskusi.jpg">
 
     </div>
 </div>
