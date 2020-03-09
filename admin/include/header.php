@@ -65,4 +65,8 @@
 
 
 <body>
-    <?php require "menu-navigasi.php" ?>
+    <?php 
+    
+    require "menu-navigasi.php";
+    
+    ?>

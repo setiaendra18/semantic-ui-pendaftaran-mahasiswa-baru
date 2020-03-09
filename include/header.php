@@ -31,8 +31,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/components/sidebar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/message.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/card.css">
-    
-  
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/css/components/transition.js"></script>
 
@@ -45,13 +45,7 @@
         margin-right: 1.5em;
     }
 
-    .main.container {
-        margin-top: 0em;
-    }
-
-    .container {
-        margin-top: 5em;
-    }
+   
 
     .wireframe {
         margin-top: 2em;
@@ -63,18 +57,7 @@
     }
     </style>
 
-<script>
-  $(document)
-    .ready(function() {
 
-      // fix menu when passed
-      $('.container')
-  .transition('fade up')
-;
-
-    })
-  ;
-  </script>
 </head>
 
 <body>
@@ -82,4 +65,3 @@
     include "config/database.php";
     require "menu-navigasi.php" 
     ?>
-    
