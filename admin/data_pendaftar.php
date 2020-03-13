@@ -76,7 +76,7 @@ if (mysqli_num_rows($result) > 0) {
                 ?>
                 </td>
                 <td class="center aligned">
-                <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui green primary button">
+                <a href="data_pendaftar_view.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui green button">
                 <i class="eye icon"></i>
                 </a>
                 <a href="data_pendaftar_delete.php?id_pendaftar=<?= $row['id_pendaftar'];?>" class="mini ui black button">

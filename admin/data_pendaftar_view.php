@@ -5,9 +5,7 @@ include '../config/database.php';
 $id_pendaftar=$_GET['id_pendaftar'];
 
 
-
-
-$query = mysqli_query($conn, "SELECT * FROM pendaftar WHERE id_pendaftar='$id_pendaftar'");
+$query = mysqli_query($conn, "SELECT * FROM pendaftar JOIN jurusan ON pendaftar.jurusan_pilihan=jurusan.id_jurusan WHERE id_pendaftar='$id_pendaftar'");
 $data = mysqli_fetch_array($query);
 
 ?>
@@ -54,11 +52,38 @@ $data = mysqli_fetch_array($query);
                                 </tr>
                                 <tr>
                                     <td>JURUSAN</td>
-                                    <td> <?= $data['jurusan_pilihan']; ?></td>
+                                    <td><?= $data['nama_jurusan']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>AGAMA</td>
-                                    <td> <?= $data['agama']; ?></td>
+                                    <td>
+                                    <?php
+                                        if($data['agama']==0)
+                                        {
+                                            echo "Islam";
+                                        }
+                                        else  if($data['agama']==1)
+                                        {
+                                            echo "Kristen";
+                                        }
+                                        else  if($data['agama']==2)
+                                        {
+                                            echo "katolik";
+                                        }
+                                        else  if($data['agama']==3)
+                                        {
+                                            echo "Hindu";
+                                        }
+                                        else  if($data['agama']==4)
+                                        {
+                                            echo "Budha";
+                                        }
+                                        else  if($data['agama']==5)
+                                        {
+                                            echo "Lainya";
+                                        }
+                                        ?>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>E-MAIL</td>

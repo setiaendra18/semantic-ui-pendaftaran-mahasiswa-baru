@@ -4,7 +4,7 @@
     <div class="ui segment">
 
 
-    <img class="ui fluid image" src="assets/images/diskusi.jpg">
+        <img class="ui fluid image" src="assets/images/diskusi.jpg">
 
     </div>
 </div>
@@ -35,14 +35,14 @@
                 </div>
             </div>
         </div>
-      
+
 
     </div>
-   
+
     <div class="twelve wide column">
         <div class="ui card fluid">
             <div class="content">
-                <div class="header">Project Timeline</div>
+                <div class="header">FAKULTAS</div>
             </div>
             <div class="content">
                 <h4 class="ui sub header">Activity</h4>
@@ -50,7 +50,7 @@
                     <div class="event">
                         <div class="content">
                             <div class="summary">
-                                <a>Elliot Fu</a> added <a>Jenny Hess</a> to the project
+                               asdf
                             </div>
                         </div>
                     </div>

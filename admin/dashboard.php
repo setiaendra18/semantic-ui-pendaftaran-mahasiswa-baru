@@ -9,7 +9,7 @@ include 'include/header.php';
         <h2 class="ui center aligned header">
                SELAMAT DATANG ( <?=  $_SESSION['nama']; ?> ) DI SISTEM ADMINISTRATOR
             </h2>
-        <img class="ui centered medium image" src="../assets/images/Delivery.png">
+        <img class="ui centered medium image" src="../assets/images/Log-in.png">
           
         </div>
     </div>
