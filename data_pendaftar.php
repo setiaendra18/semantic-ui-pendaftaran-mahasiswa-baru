@@ -7,22 +7,27 @@ require "include/header.php";
 <div class="ui segments">
     <div class="ui segment">
 
-<h4> DATA PENDAFTAR </h4>
+    <h3 class="ui blue block header">DATA PENDAFTAR PMB UTM 2020/2021
+
+</h3>
         <table class="ui striped celled table">
-            <thead>
+            <thead class="ui striped celled table">
                 <tr>
                     <th width="150px">NO PENDAFTARAN</th>
                     <th>NAMA</th>
+                    <th>JURUSAN</th>
+                    <th>FAKULTAS</th>
                     <th>JENIS KELAMIN</th>
                     <th>KOTA</th>
                     <th>PROVINSI</th>
+                   
                     <th width="150px">STATUS</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
 
-$sql = "SELECT * FROM pendaftar";
+$sql = "SELECT * FROM pendaftar JOIN jurusan ON pendaftar.jurusan_pilihan=jurusan.id_jurusan JOIN fakultas ON jurusan.id_fakultas=fakultas.id_fakultas";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -36,6 +41,8 @@ if (mysqli_num_rows($result) > 0) {
                 <tr>
                     <td><?= $row['id_pendaftar']?></td>
                     <td><?= $row['nama']?></td>
+                    <td><?= $row['nama_jurusan']?></td>
+                    <td><?= $row['nama_fakultas']?></td>
                     <td>
                         <?php
                 
@@ -54,6 +61,7 @@ if (mysqli_num_rows($result) > 0) {
                     </td>
                     <td><?= $row['kota']?></td>
                     <td><?= $row['provinsi']?></td>
+                    
                     <td>
                         <?php
                 

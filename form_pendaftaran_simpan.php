@@ -1,7 +1,7 @@
 <?php
 include "config/database.php";
 include "include/kode_pendaftaran.php";
-
+require "include/header.php";
 
 //TERIMA VARIABEL DARI FORM
 $nama=$_POST['nama'];
@@ -41,8 +41,30 @@ $sql="INSERT INTO pendaftar (id_pendaftar,nama, jenis_kelamin, agama,email,no_tl
  
 if ($conn->query($sql) === TRUE)
 {
-    header("location:data_pendaftar.php");
-    
+?>
+
+<div class="ui segments">
+    <div class="ui segment">
+        <div class="ui message">
+            <div class="header">
+                PENDAFTARAN ANDA BERHASIL
+            </div>
+            <h1 class="ui blue"><?= $id_pendaftar ?></h1>
+            <h3 class="ui blue">"Silahkan catat nomor pendaftaran, Pendaftaran sedang dalam review panitia"</h3>
+            <a href="data_pendaftar.php" class="ui green left labeled icon button">
+                <i class="left arrow icon"></i>
+                KEMBALI
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+<?php
+
+
 } 
 else
 {
@@ -50,5 +72,7 @@ else
 }
 
 $conn->close();
+
+
 
 ?>

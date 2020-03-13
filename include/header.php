@@ -68,3 +68,4 @@
     include "config/database.php";
     require "menu-navigasi.php" 
     ?>
+<div class="ui  divider"></div>
