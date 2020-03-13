@@ -60,3 +60,4 @@ mysqli_close($conn);
     </div>
 </div>
 </div>
+<div class="ui hidden divider"></div>
