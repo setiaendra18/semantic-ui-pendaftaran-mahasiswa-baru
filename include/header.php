@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/components/message.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/card.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/tab.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/components/item.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/css/components/transition.js"></script>
