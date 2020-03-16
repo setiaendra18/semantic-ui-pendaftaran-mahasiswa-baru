@@ -24,7 +24,7 @@ include '../config/database.php';
             <tbody>
                 <?php
 
-$sql = "SELECT * FROM jurusan JOIN fakultas ON jurusan.id_fakultas=fakultas.id_fakultas";
+$sql = "SELECT * FROM jurusan JOIN fakultas ON jurusan.id_fakultas=fakultas.id_fakultas ORDER BY nama_fakultas";
 $result = mysqli_query($conn, $sql);
 $nomor=1;
 if (mysqli_num_rows($result) > 0) {

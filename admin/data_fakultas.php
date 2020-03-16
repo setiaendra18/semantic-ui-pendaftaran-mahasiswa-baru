@@ -25,13 +25,13 @@ include '../config/database.php';
 
 $sql = "SELECT * FROM fakultas";
 $result = mysqli_query($conn, $sql);
-
+$nomor=1;
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while ($row = mysqli_fetch_assoc($result)) {
         ?>
                 <tr>
-                    <td><?=$row['id_fakultas']?></td>
+                    <td><?=$nomor?></td>
                     <td><?=$row['nama_fakultas']?></td>
                     <td class="center aligned">
                         <a href="data_fakultas_view.php?id_fakultas=<?= $row['id_fakultas'];?>"
@@ -42,6 +42,7 @@ if (mysqli_num_rows($result) > 0) {
                 </tr>
 
                 <?php
+                $nomor++;
 }
 } else {
     echo "0 results";
